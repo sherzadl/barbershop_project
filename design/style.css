@@ -78,5 +78,60 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+/* Page Container */
+.page-container {
+    display: none;
+    overflow-y: auto;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+/* Individual Page */
+.page {
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.page img:hover {
+    transform: scale(1.05);
+}
+
+/* Initial Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 200px;
+    transition: opacity 0.5s;
+}
+
+.gallery-item {
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Animation to Hide Gallery */
+.hide-gallery {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Show Pages */
+.show-pages {
+    display: block;
+}
+
 
 
