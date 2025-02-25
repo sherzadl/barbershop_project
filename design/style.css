@@ -6,6 +6,8 @@ body, html {
     font-family: Arial, sans-serif;
     background: #0c0c0c;
     color: #fff;
+    scroll-behavior: smooth;
+    height: 100%;
 }
 
 /* Logo and Contact Number */
@@ -51,24 +53,38 @@ body, html {
 .page-container {
     display: none;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     background: #0c0c0c;
     z-index: 20;
+    overflow-y: auto;
+    height: 100vh;
 }
 
+/* Pages */
 .page {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
-    color: #fff;
     padding: 0 200px;
+    box-sizing: border-box;
 }
 
+.page1 {
+    background-color: #0c0c0c;
+}
+
+.page2 {
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+    padding: 100px 20px;
+}
+
+/* Text and Button Styling */
 .text-content {
     width: 45%;
     text-align: left;
@@ -76,13 +92,10 @@ body, html {
 }
 
 .page-image {
-    width: 60%;
-    height: 60vh;
+    width: 50%;
     object-fit: cover;
-    border-left: 5px solid #ffdf00;
 }
 
-/* Text and Button Styling */
 .highlight {
     color: #ffdf00;
     font-size: 80px;
@@ -119,7 +132,7 @@ h1 {
 
 /* Animation */
 .show-pages {
-    display: flex;
+    display: block;
     animation: slideIn 1s forwards;
 }
 
