@@ -13,3 +13,13 @@ barbershopImage.addEventListener('click', () => {
 function showPage3() {
     document.getElementById("page3").scrollIntoView({ behavior: "smooth" });
 }
+// Scroll to Page 4 after Page 3
+window.addEventListener('scroll', function() {
+    const page3 = document.getElementById('page3');
+    const page4 = document.getElementById('page4');
+    const page3Rect = page3.getBoundingClientRect();
+    
+    if (page3Rect.bottom <= window.innerHeight) {
+        page4.scrollIntoView({ behavior: 'smooth' });
+    }
+});
