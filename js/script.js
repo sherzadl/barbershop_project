@@ -5,8 +5,6 @@ const barbershopImage = document.querySelector('.gallery-item img[alt="Barbersho
 
 // Event Listener to Show Pages on Click
 barbershopImage.addEventListener('click', () => {
-    gallery.classList.add('hide-gallery');
-    setTimeout(() => {
-        pageContainer.classList.add('show-pages');
-    }, 500);
+    gallery.style.display = 'none';
+    pageContainer.classList.add('show-pages');
 });
