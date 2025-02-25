@@ -9,3 +9,7 @@ barbershopImage.addEventListener('click', () => {
     pageContainer.style.display = 'block';
     pageContainer.scrollTo(0, 0);  // Start at the top of Page 1
 });
+// Scroll to Page 3
+function showPage3() {
+    document.getElementById("page3").scrollIntoView({ behavior: "smooth" });
+}

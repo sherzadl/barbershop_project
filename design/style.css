@@ -67,7 +67,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 90px 150px;
+    padding: 100px 150px;
 }
 .page1 .text-content {
     width: 40%;
@@ -101,4 +101,86 @@ body, html {
 .feature-text p {
     font-size: 18px;
     color: #333;
+
 }
+
+/* Page 3 */
+.page3 {
+    background-color: #0c0c0c;
+    color: #fff;
+    padding: 100px 50px;
+    text-align: center;
+    height: 100vh;
+}
+
+.page3-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.page3-offer {
+    color: #ffdf00;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.page3-offer span {
+    color: #fff;
+    background: #ffdf00;
+    padding: 0 5px;
+}
+
+.page3-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.page3-image {
+    width: 350px;
+    height: auto;
+}
+
+.page3-card {
+    background: #fff;
+    color: #000;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    position: relative;
+    text-align: left;
+}
+
+.page3-card h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffdf00;
+    display: inline-block;
+}
+
+.page3-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page3-card ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.page3-sticker {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: auto;
+}
+
