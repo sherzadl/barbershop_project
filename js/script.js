@@ -23,3 +23,21 @@ window.addEventListener('scroll', function() {
         page4.scrollIntoView({ behavior: 'smooth' });
     }
 });
+// Smooth scroll to Page 4 after scrolling Page 3
+window.addEventListener('scroll', function() {
+    const page3 = document.querySelector('.page3');
+    const page4 = document.querySelector('.page4');
+
+    if (page3.getBoundingClientRect().bottom < window.innerHeight) {
+        page4.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+// Placeholder for navigation arrows functionality (optional)
+document.querySelector('.left-arrow').addEventListener('click', function() {
+    alert('Left arrow clicked!');
+});
+
+document.querySelector('.right-arrow').addEventListener('click', function() {
+    alert('Right arrow clicked!');
+});
