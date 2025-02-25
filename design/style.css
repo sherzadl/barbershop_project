@@ -339,3 +339,148 @@ body, html {
 .right-arrow {
     right: 20px;
 }
+/* Page 5 - Promotions */
+.page5 {
+    background: #fff;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.page5 .title {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.promotions-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.promo-left {
+    position: relative;
+}
+
+.circle-text {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle-text span {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    white-space: nowrap;
+    animation: rotateText 10s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotateText {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.promo-img {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+}
+
+.left-img {
+    left: -50px;
+}
+
+.right-img {
+    right: -50px;
+}
+
+.promo-right {
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.joint-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.joint-subtitle {
+    font-size: 20px;
+    color: #000;
+    background: yellow;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.joint-text {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.promo-button {
+    background: yellow;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.promo-button:hover {
+    background: black;
+    color: yellow;
+}
+
+.promo-footer {
+    background: black;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-middle ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+    color: #f9e300;
+    margin: 5px 0;
+}
