@@ -8,38 +8,24 @@ body, html {
     color: #fff;
 }
 
-/* Logo Animation */
+/* Logo and Contact Number */
 .logo-container {
     position: absolute;
-    top: 80px;
-    left: 60px;
+    top: 30px;
+    left: 50px;
     z-index: 10;
 }
 .logo {
     width: 150px;
 }
-.page-logo {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    z-index: 20;
-}
-
-/* Contact Number */
 .contact-number {
     position: absolute;
-    top: 80px;
-    right: 60px;
+    top: 30px;
+    right: 50px;
     color: #ffdf00;
     font-weight: bold;
     font-size: 24px;
     z-index: 15;
-}
-.page-contact {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    z-index: 20;
 }
 
 /* Gallery */
@@ -80,19 +66,20 @@ body, html {
     justify-content: space-between;
     height: 100vh;
     color: #fff;
-    text-align: left;
-    padding: 0 50px;
-    gap: 20px;
+    padding: 0 200px;
 }
 
 .text-content {
-    max-width: 45%;
+    width: 45%;
+    text-align: left;
+    padding-right: 50px;
 }
 
 .page-image {
-    max-width: 50%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border-radius: 10px;
+    width: 60%;
+    height: 60vh;
+    object-fit: cover;
+    border-left: 5px solid #ffdf00;
 }
 
 /* Text and Button Styling */
