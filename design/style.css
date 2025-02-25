@@ -18,6 +18,12 @@ body, html {
 .logo {
     width: 150px;
 }
+.page-logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 20;
+}
 
 /* Contact Number */
 .contact-number {
@@ -28,6 +34,12 @@ body, html {
     font-weight: bold;
     font-size: 24px;
     z-index: 15;
+}
+.page-contact {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 20;
 }
 
 /* Gallery */
@@ -65,24 +77,32 @@ body, html {
 .page {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 100vh;
     color: #fff;
     text-align: left;
     padding: 0 50px;
+    gap: 20px;
 }
 
 .text-content {
-    max-width: 40%;
+    max-width: 45%;
 }
 
 .page-image {
     max-width: 50%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
 }
 
+/* Text and Button Styling */
 .highlight {
     color: #ffdf00;
+    font-size: 80px;
+    line-height: 1.2;
+}
+
+h1 {
     font-size: 60px;
 }
 
@@ -92,7 +112,7 @@ body, html {
     color: #ffdf00;
     padding: 5px 10px;
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 24px;
     box-shadow: 5px 5px 0px #222;
 }
 
@@ -100,10 +120,11 @@ body, html {
     background: #ffdf00;
     border: none;
     color: #000;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 15px 30px;
+    font-size: 20px;
     cursor: pointer;
     transition: background 0.3s;
+    margin-top: 20px;
 }
 .cta-button:hover {
     background: #e6c700;
@@ -111,7 +132,7 @@ body, html {
 
 /* Animation */
 .show-pages {
-    display: block;
+    display: flex;
     animation: slideIn 1s forwards;
 }
 
