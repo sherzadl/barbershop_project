@@ -1,16 +1,13 @@
-// Smooth scrolling for internal links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+// Logo Animation
+window.addEventListener('load', () => {
+    const logo = document.querySelector('.logo');
+    logo.classList.add('logo-animate');
 
-// Alert for booking buttons
-document.querySelectorAll('.book-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        alert('Booking feature coming soon!');
+    // Trigger gallery animation for all at once
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach((item) => {
+        item.style.opacity = '1';
+        item.style.transform = 'scale(1)';
     });
 });
+    

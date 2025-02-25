@@ -1,139 +1,87 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset and Base Styles */
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #e8dcc2;
-    color: #3e2f23;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Georgia', serif;
-}
-ul {
-    list-style: none;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-    color: #3e2f23;
-}
-
-/* Header */
-header {
-    background-color: #b18a5c;
-    padding: 20px;
-}
-.nav-links {
-    display: inline-flex;
-    gap: 15px;
-}
-.nav-buttons {
-    float: right;
-}
-.join-btn, .book-btn {
-    background-color: #3e2f23;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background: #0c0c0c;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-}
-.book-btn:hover, .join-btn:hover {
-    opacity: 0.8;
 }
 
-/* Hero Section */
+/* Logo Animation */
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: logoMove 2s forwards;
+}
+.logo {
+    width: 300px;
+    transition: width 2s;
+}
+@keyframes logoMove {
+    0% { top: 50%; left: 50%; width: 400px; }
+    100% { top: 80px; left: 60px; width: 150px; } /* Moved slightly down */
+}
 
-.hero {
-    background: url('../images/chair.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    min-height: 100vh;
+/* Contact Number */
+.contact-number {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    opacity: 0;
+    animation: fadeIn 2s 2s forwards;
+    color: #ffdf00;
+    font-weight: bold;
+    z-index: 10;
+}
+
+/* Scrolling Text */
+.scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    color: #000;
+    padding: 5px 0;
+    margin-top: 120px;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
+.scrolling-text span {
+    display: inline-block;
+    font-weight: bold;
+    animation: scroll 8s linear infinite;
+}
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Gallery Animation */
+.gallery {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    gap: 50px;
+    margin-top: 200px;
 }
-
-
-.hero h1 {
-    font-size: 3em;
+.gallery-item {
+    opacity: 0;
+    transform: scale(0);
+    animation: grow 1.5s ease-out forwards;
 }
-.hero-buttons .book-btn, .hero-buttons .learn-more-btn {
-    background-color: #3e2f23;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
+.gallery-item img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
 }
-
-/* Services Section */
-.services {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    min-height: 600px;
-    background-color: #f5f5f5;
-}
-
-.services .content {
-    max-width: 50%;
-    padding: 20px;
-}
-
-.services .text {
-    flex: 1;
-    padding-right: 20px;
-    color: #333;
-    text-align: left;
-}
-
-.services .image {
-    flex: 1;
-    background: url('../images/hair.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-    border-radius: 20px;
-}
-
-.service-item {
-    background-color: #d2b68d;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Testimonials Section */
-.testimonials {
-    background-color: #b18a5c;
-    color: #fff;
-    padding: 40px;
+.gallery-item h3 {
     text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
 }
-.testimonial-author img {
-    border-radius: 50%;
-}
-
-/* Call to Action */
-.cta {
-    background-color: #e8dcc2;
-    text-align: center;
-    padding: 50px;
-}
-
-/* Footer */
-footer {
-    background-color: #3e2f23;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+@keyframes grow {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
 }
