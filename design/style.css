@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8dcc2;
+    color: #3e2f23;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #3e2f23;
+}
+
+/* Header */
+header {
+    background-color: #b18a5c;
+    padding: 20px;
+}
+.nav-links {
+    display: inline-flex;
+    gap: 15px;
+}
+.nav-buttons {
+    float: right;
+}
+.join-btn, .book-btn {
+    background-color: #3e2f23;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.book-btn:hover, .join-btn:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+
+.hero {
+    background: url('../images/chair.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+.hero h1 {
+    font-size: 3em;
+}
+.hero-buttons .book-btn, .hero-buttons .learn-more-btn {
+    background-color: #3e2f23;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    min-height: 600px;
+    background-color: #f5f5f5;
+}
+
+.services .content {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.services .text {
+    flex: 1;
+    padding-right: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.services .image {
+    flex: 1;
+    background: url('../images/hair.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.service-item {
+    background-color: #d2b68d;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #b18a5c;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+.testimonial-author img {
+    border-radius: 50%;
+}
+
+/* Call to Action */
+.cta {
+    background-color: #e8dcc2;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #3e2f23;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
