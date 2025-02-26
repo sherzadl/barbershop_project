@@ -18,11 +18,11 @@ body, html {
     z-index: 10;
 }
 .logo {
-    width: 120px;
+    width: 300px;
 }
 .contact-number {
     position: absolute;
-    top: 20px;
+    top: 80px;
     right: 30px;
     color: #ffdf00;
     font-weight: bold;
@@ -72,7 +72,7 @@ body, html {
 }
 .page1 .text-content {
     width: 40%;
-    min-width: 300px;
+    min-width: 400px;
 }
 .page1 .page-image {
     width: 45%;
