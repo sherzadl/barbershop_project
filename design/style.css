@@ -272,3 +272,145 @@ body, html {
 .back-home:hover {
     background: #e0c800;
 }
+
+.barbers-section {
+    padding: 100px 20px;
+    background: #0c0c0c;
+    text-align: center;
+}
+
+.barbers-title {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.barbers-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.barber-card {
+    background: #fff;
+    color: #000;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.barber-card:hover {
+    transform: translateY(-10px);
+}
+
+.barber-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.barber-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.underline {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ffdf00;
+    margin: 0 auto 15px auto;
+}
+
+.experience {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.products-section {
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
+
+.products-header {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.products-header span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.products-header span.active {
+    color: #d7ff00;
+    position: relative;
+}
+
+.products-header span.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #d7ff00;
+    bottom: -5px;
+    left: 0;
+}
+
+.products-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-card {
+    background: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
