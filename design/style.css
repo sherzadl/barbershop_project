@@ -67,7 +67,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 150px;
+    padding: 200px 150px;
     flex-wrap: wrap;
 }
 .page1 .text-content {
@@ -80,6 +80,26 @@ body, html {
     border-left: 5px solid #ffdf00;
     min-width: 300px;
 }
+.page1 .text-content .sub-text {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+}
+.page1 .text-content .sub-text .highlight {
+    color: #ffdf00;
+    font-size: 42px;
+}
+
+.page1 .text-content h1,
+.page1 .text-content h2,
+.page1 .text-content h3,
+.page1 .text-content .wow-text {
+    font-size: 104px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ff5100;
+}
+
 
 /* Page 2 */
 .page2 {
@@ -141,17 +161,17 @@ body, html {
 }
 
 .page3-image {
-    width: 350px;
+    width: 550px;
     height: auto;
 }
 
 .page3-card {
     background: #fff;
     color: #000;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    width: 400px;
+    padding: 100px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    width: 380px;
     text-align: left;
 }
 
@@ -172,8 +192,8 @@ body, html {
 .page3-card ul li {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 20px;
+    font-size: 22px;
 }
 
 .page3-sticker {
@@ -204,13 +224,13 @@ body, html {
 }
 
 .about-us h1 {
-    font-size: 48px;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .about-us p {
-    font-size: 18px;
+    font-size: 30px;
     line-height: 1.6;
     margin-bottom: 10px;
 }
@@ -219,7 +239,7 @@ body, html {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 30%;
+    width: 40%;
     max-height: 80%;
     z-index: 1;
 }
@@ -228,7 +248,7 @@ body, html {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 30%;
+    width: 50%;
     max-height: 80%;
     z-index: 1;
 }
@@ -311,7 +331,7 @@ body, html {
 
 .barber-image {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -496,3 +516,5 @@ body, html {
     height: auto;
     border-radius: 10px;
 }
+
+
