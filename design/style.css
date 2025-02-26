@@ -42,6 +42,10 @@ body, html {
     height: 400px;
     object-fit: cover;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.gallery-item img:hover {
+    transform: scale(1.05);
 }
 .gallery-item h3 {
     text-align: center;
@@ -51,15 +55,11 @@ body, html {
 
 /* Page Container */
 .page-container {
-    display: none;
+    display: block;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #0c0c0c;
-    z-index: 20;
     overflow-y: auto;
-    height: 100vh;
+    background: #0c0c0c;
+    padding-top: 100px;
 }
 
 /* Page 1 */
@@ -68,14 +68,17 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 100px 150px;
+    flex-wrap: wrap;
 }
 .page1 .text-content {
     width: 40%;
+    min-width: 300px;
 }
 .page1 .page-image {
     width: 45%;
     object-fit: cover;
     border-left: 5px solid #ffdf00;
+    min-width: 300px;
 }
 
 /* Page 2 */
@@ -101,7 +104,6 @@ body, html {
 .feature-text p {
     font-size: 18px;
     color: #333;
-
 }
 
 /* Page 3 */
@@ -110,7 +112,6 @@ body, html {
     color: #fff;
     padding: 100px 50px;
     text-align: center;
-    height: 100vh;
 }
 
 .page3-title {
@@ -136,7 +137,7 @@ body, html {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .page3-image {
@@ -151,7 +152,6 @@ body, html {
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     width: 400px;
-    position: relative;
     text-align: left;
 }
 
@@ -183,6 +183,7 @@ body, html {
     width: 100px;
     height: auto;
 }
+
 /* Page 4 Styling */
 .page4 {
     background-color: #000;
@@ -191,7 +192,7 @@ body, html {
     padding: 100px 20px;
     position: relative;
     overflow: hidden;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,235 +253,22 @@ body, html {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
-/* Page 4 - Barbers */
-.page4 {
-    background: #0d0d0d;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    position: relative;
-}
 
-.page4 .title {
-    font-size: 36px;
-    margin-bottom: 50px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.barbers-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.barber-card {
-    background: white;
-    border-radius: 10px;
-    width: 300px;
-    padding: 20px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-}
-
-.barber-img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.barber-name {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-    position: relative;
-}
-
-.barber-name::after {
-    content: '';
+/* Back to Home Link */
+.back-home {
     display: block;
-    width: 50px;
-    height: 4px;
-    background: #f9e300;
-    margin-top: 5px;
-}
-
-.barber-exp {
-    font-size: 14px;
-    color: black;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.barber-desc {
-    font-size: 14px;
-    color: #444;
-}
-
-.nav-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 36px;
-    cursor: pointer;
-    padding: 10px;
-    user-select: none;
-}
-
-.left-arrow {
-    left: 20px;
-}
-
-.right-arrow {
-    right: 20px;
-}
-/* Page 5 - Promotions */
-.page5 {
-    background: #fff;
-    color: black;
     text-align: center;
-    padding: 100px 20px;
-    position: relative;
-}
-
-.page5 .title {
-    font-size: 36px;
-    margin-bottom: 50px;
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.promotions-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.promo-left {
-    position: relative;
-}
-
-.circle-text {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.circle-text span {
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    display: block;
-    white-space: nowrap;
-    animation: rotateText 10s linear infinite;
-    transform-origin: center;
-}
-
-@keyframes rotateText {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.promo-img {
-    position: absolute;
-    bottom: 0;
-    width: 150px;
-}
-
-.left-img {
-    left: -50px;
-}
-
-.right-img {
-    right: -50px;
-}
-
-.promo-right {
-    background: #f3f3f3;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.joint-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-}
-
-.joint-subtitle {
-    font-size: 20px;
-    color: #000;
-    background: yellow;
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.joint-text {
-    font-size: 14px;
-    color: black;
-    margin-bottom: 20px;
-}
-
-.promo-button {
-    background: yellow;
-    border: none;
     padding: 10px 20px;
-    color: black;
+    color: #fff;
+    background: #ffdf00;
+    text-decoration: none;
     font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.promo-button:hover {
-    background: black;
-    color: yellow;
-}
-
-.promo-footer {
-    background: black;
-    color: white;
-    padding: 50px 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.footer-left img {
+    margin: 20px auto;
     width: 150px;
-    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-.footer-middle ul,
-.footer-right ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-middle ul li,
-.footer-right ul li {
-    color: #f9e300;
-    margin: 5px 0;
+.back-home:hover {
+    background: #e0c800;
 }
