@@ -9,6 +9,11 @@
 
 ---
 
+## 💡 Prototype Figma
+[View Prototype](https://www.figma.com/design/kbLtQw3qEy39fWZ3oLjzvb/Barbershop?node-id=0-1&t=nll7ZJDiM38Ov4C6-1)
+
+---
+
 ## 🎨 Features
 - **Home Page:**
   - Animated logo that moves to the top-left corner on load.
