@@ -49,7 +49,9 @@
 3. Open index.html in your browser:
 Double-click the index.html file or use a live server extension if using VSCode.
 
-##📞 Contact
+---
+
+## 📞 Contact
 For suggestions or feedback, contact me at:
 
 Email: [s.pishenbaev@newuu.uz]
