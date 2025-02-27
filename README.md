@@ -55,8 +55,6 @@ Double-click the index.html file or use a live server extension if using VSCode.
 For suggestions or feedback, contact me at:
 
 Email: [s.pishenbaev@newuu.uz].
-Website: [https://playful-dasik-9e0819.netlify.app/].
-© 2025 Barber Shop. All Rights Reserved.
 
 
 
