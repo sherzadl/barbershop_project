@@ -43,4 +43,17 @@
 ## ⚙️ How to Run Locally
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/your-username/barber-shop-website.git
+   git clone https://github.com/sherzadl/barbershop_project.git
+2. Navigate to the Project Directory:
+  cd barbershop_project
+3. Open index.html in your browser:
+Double-click the index.html file or use a live server extension if using VSCode.
+📞 Contact
+For suggestions or feedback, contact me at:
+
+Email: [s.pishenbaev@newuu.uz]
+Website: [https://playful-dasik-9e0819.netlify.app/] 
+© 2025 Barber Shop. All Rights Reserved.
+
+
+
